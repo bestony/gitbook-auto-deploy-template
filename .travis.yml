@@ -17,7 +17,7 @@ install:
 
 script:
   - gitbook build . ./build
-  - echo "thewriter.dev" >> ./build/CNAME 
+  # - echo "yourdomain.com" >> ./build/CNAME
 
 before_deploy:
       # Set up git user name and tag this commit
