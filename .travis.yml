@@ -9,7 +9,6 @@ cache:
 
 before_install:
   - export TZ='Asia/Shanghai'
-  - sudo apt-get install calibre fonts-noto-cjk -y
 
 install:
   - npm install gitbook-cli -g
