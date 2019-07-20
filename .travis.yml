@@ -16,7 +16,6 @@ install:
 
 script:
   - gitbook build . ./build
-  # - echo "yourdomain.com" >> ./build/CNAME
 
 before_deploy:
       # Set up git user name and tag this commit
@@ -29,5 +28,6 @@ deploy:
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
     local_dir: build
+    fqdn:"example.com"
     on:
       branch: master
